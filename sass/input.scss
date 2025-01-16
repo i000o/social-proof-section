@@ -1,0 +1,122 @@
+@use 'reset';
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@mixin footer { 
+    margin: 20px; 
+    font-size: 0.6em;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: 'league spartan', sans-serif;
+    background-color: hsl(0, 0%, 100%);
+    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+
+    main { 
+        display: flex; 
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin: 150px;
+
+        header { 
+
+            max-width: 30em;
+
+            h1 { 
+                font-size: 3em;
+                color: hsl(300, 43%, 22%);
+            }
+
+            h2 { 
+                color: hsl(303, 10%, 53%);
+                font-weight: 500;
+                font-size: 1.1em;
+                line-height: 130%;
+            }
+        }
+
+        aside { 
+
+            max-width: 30em;
+            flex-grow: 1;
+
+            // add star icons from images
+            
+            h3 { 
+                color:hsl(300, 43%, 22%);
+                background-color: hsl(300, 24%, 96%);
+                padding: 20px 30px;
+            }
+        }
+
+        section { 
+            display: flex; 
+            justify-content: space-evenly; 
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+
+            article { 
+                display: flex; 
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: hsl(300, 43%, 22%);
+                border-radius: 12px;
+                padding: 30px;
+                max-width: 22em;
+
+                div.profile {
+                    display: flex; 
+                    flex-flow: row nowrap;
+                    justify-content: flex-start;
+                    align-items: center;
+                    width: 100%;
+                    gap: 20px;
+
+                    img { 
+                        border-radius: 20px;
+                        order: -1; 
+                        max-width: 40px;
+                    }
+
+                    div.name { 
+                        display: flex; 
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+                    }
+                }
+
+                h4 { 
+                    margin-bottom: 1px;
+                }
+
+                h4, p {
+                    color: hsl(300, 24%, 96%);
+                }
+
+                h5 { 
+                    color: hsl(333, 80%, 67%);
+                    font-weight: 400;
+                    font-size: 1em;
+                    margin-top: 1px;
+                }
+
+                p { 
+                    font-weight: 500;
+                    line-height: 140%;
+                    margin: 5px;
+                }
+
+                // div icon and name plates 
+            }
+        }
+    }
+}
+
+footer { 
+    @include footer;
+}

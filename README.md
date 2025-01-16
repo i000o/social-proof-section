@@ -18,6 +18,8 @@ This is a solution to the [Social proof section on Frontend Mentor](https://www.
 
 ## Goal
 
+Desktop-first workflow, Sass-focused
+
 ## Outcome
 
 ![](./)
@@ -66,4 +68,5 @@ This is a solution to the [Social proof section on Frontend Mentor](https://www.
 []()
 
 # order-summary-component
+
 # social-proof-section
