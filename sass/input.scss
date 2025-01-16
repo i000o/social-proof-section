@@ -41,13 +41,28 @@ body {
 
             max-width: 30em;
             flex-grow: 1;
+            margin-bottom: 20px;
 
-            // add star icons from images
-            
             h3 { 
                 color:hsl(300, 43%, 22%);
+                font-size: 0.9em;
+                margin: 10px 20px;
+            }
+
+            div.ratings { 
+                display: flex; 
+                justify-content: flex-start;
+                align-items: center;
                 background-color: hsl(300, 24%, 96%);
-                padding: 20px 30px;
+                padding: 5px 10px 5px 20px;
+                border-radius: 12px;
+                max-width: 25em;
+                margin-bottom: 10px;
+
+                img { 
+                    margin: 2px;
+                    order: -1;
+                }
             }
         }
 
@@ -65,7 +80,7 @@ body {
                 align-items: center;
                 background-color: hsl(300, 43%, 22%);
                 border-radius: 12px;
-                padding: 30px;
+                padding: 20px 30px 30px 30px;
                 max-width: 22em;
 
                 div.profile {
@@ -110,8 +125,6 @@ body {
                     line-height: 140%;
                     margin: 5px;
                 }
-
-                // div icon and name plates 
             }
         }
     }
