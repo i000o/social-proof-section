@@ -14,19 +14,21 @@ body {
     background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
 
     main { 
-        display: flex; 
+        display: inline-flex; // this allows margin properties to work on the flex items
         justify-content: space-between;
         align-items: flex-start;
         flex-wrap: wrap;
-        margin: 150px;
+        margin: 100px 150px;
 
         header { 
 
             max-width: 30em;
 
             h1 { 
-                font-size: 3em;
+                font-size: 3.5em;
                 color: hsl(300, 43%, 22%);
+                margin-right: 100px;
+                line-height: 80%;
             }
 
             h2 { 
@@ -34,6 +36,7 @@ body {
                 font-weight: 500;
                 font-size: 1.1em;
                 line-height: 130%;
+                margin-right: 50px;
             }
         }
 
@@ -42,11 +45,30 @@ body {
             max-width: 30em;
             flex-grow: 1;
             margin-bottom: 20px;
+            display: grid; 
+            grid-template-rows: repeat(3, 60px);
+            grid-template-columns: repeat(10, 60px);
+            margin-top: 50px;
 
             h3 { 
                 color:hsl(300, 43%, 22%);
                 font-size: 0.9em;
                 margin: 10px 20px;
+            }
+
+            :first-child { 
+                grid-row: 1;
+                grid-column: 1 / span 8;
+            }
+
+            :nth-child(2) { 
+                grid-row: 2; 
+                grid-column: 2 / span 8;
+            }
+
+            :nth-child(3) { 
+                grid-row: 3; 
+                grid-column: 3 / span 8;
             }
 
             div.ratings { 
@@ -67,11 +89,27 @@ body {
         }
 
         section { 
-            display: flex; 
-            justify-content: space-evenly; 
-            align-items: center;
-            gap: 20px;
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(10, 30px);
             width: 100%;
+            margin: 50px 0;
+            height: auto;
+
+            :first-child { 
+                grid-row: 1 / span 8; 
+                grid-column: 1;
+            }
+
+            :nth-child(2) { 
+                grid-row: 2 / span 8; 
+                grid-column: 2;
+            }
+
+            :nth-child(3) { 
+                grid-row: 3 / span 8; 
+                grid-column: 3;
+            }
 
             article { 
                 display: flex; 
@@ -79,7 +117,7 @@ body {
                 justify-content: center;
                 align-items: center;
                 background-color: hsl(300, 43%, 22%);
-                border-radius: 12px;
+                border-radius: 10px;
                 padding: 20px 30px 30px 30px;
                 max-width: 22em;
 

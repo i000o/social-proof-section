@@ -36,7 +36,7 @@ Desktop-first workflow, Sass-focused
 
 ## My process
 
-:alien:
+:alien: I did the grids last, Idk if that was the best course of action and might be wary of it in the future but I thought it was the most complicated so I left it til last.
 :alien:
 :alien:
 :alien:
@@ -51,7 +51,7 @@ Desktop-first workflow, Sass-focused
 
 ## Lessons
 
-1.
+1. first child etc.
 2.
 3.
 4.
