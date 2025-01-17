@@ -17,7 +17,9 @@ a:visited {
 body {
   font-family: "league spartan", sans-serif;
   background-color: hsl(0, 0%, 100%);
-  background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+  background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+  background-position: 450px -200px, 400px 150px;
+  background-repeat: no-repeat;
 }
 body main {
   display: inline-flex;
@@ -43,7 +45,7 @@ body main header h2 {
   margin-right: 50px;
 }
 body main aside {
-  max-width: 30em;
+  max-width: 35em;
   flex-grow: 1;
   margin-bottom: 20px;
   display: grid;

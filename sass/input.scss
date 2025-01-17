@@ -11,7 +11,11 @@
 body {
     font-family: 'league spartan', sans-serif;
     background-color: hsl(0, 0%, 100%);
-    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-position: 450px -200px, 400px 150px;
+    background-repeat: no-repeat;
+    // background-size: auto;
+    // background-origin: content-box;
 
     main { 
         display: inline-flex; // this allows margin properties to work on the flex items
@@ -42,7 +46,7 @@ body {
 
         aside { 
 
-            max-width: 30em;
+            max-width: 35em;
             flex-grow: 1;
             margin-bottom: 20px;
             display: grid; 
