@@ -12,10 +12,9 @@ body {
     font-family: 'league spartan', sans-serif;
     background-color: hsl(0, 0%, 100%);
     background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
-    background-position: 450px -200px, 400px 150px;
+    background-position: -600px -200px, 400px -50px;
     background-repeat: no-repeat;
-    // background-size: auto;
-    // background-origin: content-box;
+    // background-size: contain;
 
     main { 
         display: inline-flex; // this allows margin properties to work on the flex items
@@ -27,6 +26,7 @@ body {
         header { 
 
             max-width: 30em;
+            flex-shrink: 0;
 
             h1 { 
                 font-size: 3.5em;
@@ -175,3 +175,103 @@ body {
 footer { 
     @include footer;
 }
+
+@media screen and (max-width: 1390px) { // I used breakpoint instead I STARTED THIS AT 11:40AM
+
+    body { 
+
+        main { 
+
+            min-width: 1041px; 
+            justify-content: center; 
+            align-items: center;
+            
+            section { 
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+
+                :first-child { 
+                    grid-row: 1;
+                    grid-column: 1;
+                }
+
+                :nth-child(2) { 
+                    grid-row: 1; 
+                    grid-column: 2;
+                }
+
+                :nth-child(3) { 
+                    grid-row: 1; 
+                    grid-column: 3;
+                }
+
+                article { 
+                    max-width: 20em;
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1286px) { 
+
+    body { 
+        main { 
+            margin: 100px 100px;
+
+        }
+    }
+}
+
+@media screen and (max-width: 1147px) { 
+
+    body { 
+        main {
+            margin: 100px 50px;
+
+            section { 
+
+            // I tried to use grid for this 3-tile design but I realised flex would be way easier 
+
+                display: flex; 
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                height: auto;
+                width: 70vw;
+                gap: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1099px) { 
+
+    body { 
+        main { 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 100px 20px;
+
+            aside { 
+                    display: flex; 
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+            section { 
+                display: flex; 
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+            }
+        }
+    }

@@ -18,7 +18,7 @@ body {
   font-family: "league spartan", sans-serif;
   background-color: hsl(0, 0%, 100%);
   background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
-  background-position: 450px -200px, 400px 150px;
+  background-position: -600px -200px, 400px -50px;
   background-repeat: no-repeat;
 }
 body main {
@@ -30,6 +30,7 @@ body main {
 }
 body main header {
   max-width: 30em;
+  flex-shrink: 0;
 }
 body main header h1 {
   font-size: 3.5em;
@@ -157,6 +158,76 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 1390px) {
+  body main {
+    min-width: 1041px;
+    justify-content: center;
+    align-items: center;
+  }
+  body main section {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+  body main section :first-child {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  body main section :nth-child(2) {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  body main section :nth-child(3) {
+    grid-row: 1;
+    grid-column: 3;
+  }
+  body main section article {
+    max-width: 20em;
+  }
+}
+@media screen and (max-width: 1286px) {
+  body main {
+    margin: 100px 100px;
+  }
+}
+@media screen and (max-width: 1147px) {
+  body main {
+    margin: 100px 50px;
+  }
+  body main section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: auto;
+    width: 70vw;
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 1099px) {
+  body main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 100px 20px;
+  }
+  body main aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */

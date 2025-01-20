@@ -36,16 +36,17 @@ Desktop-first workflow, Sass-focused
 
 ## My process
 
-:alien: I did the grids last, Idk if that was the best course of action and might be wary of it in the future but I thought it was the most complicated so I left it til last.
-:alien:
-:alien:
-:alien:
+:alien: I did the grids last, Idk if that was the best course of action and might be wary of it in the future but I thought it was the most complicated so I left it til last. Love grids.
+:alien: bg-img was annoying to position - I wanna get better at this - Omg it cuts off how do I fix this?
+:alien: Float doesn't work for bottom. Section.
+I used flex-wrap nowrap for a while
+:alien: Stuck on responsive grid... not even on mobile yet
 :alien:
 
 ## Time taken
 
+:alarm_clock: Desktop: 7.5 hrs and counting
 :alarm_clock: Mobile:
-:alarm_clock: Desktop:
 
 ## Feedback
 
