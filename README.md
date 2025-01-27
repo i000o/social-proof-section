@@ -24,7 +24,7 @@ My goal here is to practice Grid again, after some time, prioritise a desktop-fi
 
 ## Outcome
 
-![Desktop](images/social-proof-desktop.png)
+![Desktop](./images/social-proof-desktop.png)
 
 :jigsaw: [Live Site URL](https://i000o.github.io/social-proof-section/)  
 :pencil2: [Solution URL](https://www.frontendmentor.io/solutions/grid-and-flex-social-proof-section-VUGR_eTz3P)
@@ -57,7 +57,7 @@ My goal here is to practice Grid again, after some time, prioritise a desktop-fi
 I got helpful feedback from a fellow developer. Namely, they noted my incorrect use of semantic HTML, which was an important thing, so I'm glad they pointed it out.  
 They also noted my targeting elements instead of classes, and how as my websites grow, this will become a bad practice because I'd be making global changes for specific elements which could cause a mess. I didn't realise this before, and will try to get out of the habit from now on. I knew I wasn't using classes for their proper purpose, but I didn't understand how yet.
 
-![Feedback](images/social-proof-feedback.png)
+![Feedback](./images/social-proof-feedback.png)
 
 ## Lessons
 
