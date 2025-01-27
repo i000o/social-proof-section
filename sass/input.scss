@@ -14,10 +14,10 @@ body {
     background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
     background-position: -600px -200px, 400px -50px;
     background-repeat: no-repeat;
-    // background-size: contain;
+    // background-size: contain; I need help with this 
 
     main { 
-        display: inline-flex; // this allows margin properties to work on the flex items
+        display: flex; // this allows margin properties to work on the flex items // but it also causes margin collapsing
         justify-content: space-between;
         align-items: flex-start;
         flex-wrap: wrap;
@@ -176,7 +176,7 @@ footer {
     @include footer;
 }
 
-@media screen and (max-width: 1390px) { // I used breakpoint instead I STARTED THIS AT 11:40AM
+@media screen and (max-width: 1390px) { 
 
     body { 
 
@@ -255,8 +255,15 @@ footer {
             flex-direction: column; 
             justify-content: center;
             align-items: center;
-            text-align: center;
+            text-align: left;
             margin: 100px 20px;
+
+            header { 
+                h1, h2 { 
+                    margin-right: 0;
+                    text-align: center;
+                }
+            }
 
             aside { 
                     display: flex; 
@@ -273,5 +280,81 @@ footer {
                 gap: 10px;
             }
             }
+
+        footer { 
+            justify-self: center;
+        }
         }
     }
+
+@media screen and (max-width: 1024px) { 
+
+    body { 
+
+        main { 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) { 
+
+    body { 
+        main { 
+
+            margin: 100px 20px; //
+
+            header { 
+                h1 { 
+                    font-size: 2.8em;
+                }
+
+                h2 { 
+                    font-size: 1.15;
+                }
+            }
+
+            aside { 
+                
+                max-width: 100%;
+
+
+                div.ratings { 
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding: 15px 50px 10px 50px;
+                    margin-bottom: 15px;
+
+                    h3 { 
+                        text-align: center;
+                        font-size: 1.05em;
+                        width: 100%;
+                    }
+                }
+            }
+
+            section { 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin: 10px 0;
+
+                article {
+                    h4 { 
+                        margin-bottom: 3px; 
+                    }
+
+                    h5 { 
+                        margin-top: 3px;
+                    }
+                }
+            }
+        }
+    }
+}

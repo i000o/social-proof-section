@@ -41,12 +41,12 @@ Desktop-first workflow, Sass-focused
 :alien: Float doesn't work for bottom. Section.
 I used flex-wrap nowrap for a while
 :alien: Stuck on responsive grid... not even on mobile yet
-:alien:
+:alien: Responsiveness took a long time - Could I have simplified it?
 
 ## Time taken
 
-:alarm_clock: Desktop: 7.5 hrs and counting
-:alarm_clock: Mobile:
+:alarm_clock: Desktop: 8hrs
+:alarm_clock: Mobile: 1 hr
 
 ## Feedback
 
@@ -59,8 +59,8 @@ I used flex-wrap nowrap for a while
 
 ## Take forward
 
-:grey_exclamation:
-:grey_exclamation:
+:grey_exclamation: I want to work on bg-imgs cos I still can't quite grasp these yet.
+:grey_exclamation: MQs took me a long time
 :grey_exclamation:
 :grey_exclamation:
 
